@@ -6,6 +6,7 @@ app.get('/',(req,res)=>{
 res.send('this is home page')
 })
 
-app.listen(3000,()=>{
+const port = process.env.PORT
+app.listen(port,()=>{
     console.log('hello world!')
 })
